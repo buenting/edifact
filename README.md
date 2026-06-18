@@ -5,13 +5,7 @@ Tools to process EDI messages in UN/EDIFACT format
 
 Supported syntax is version 3.
 
-It's provided in a Composer package:
-
-`composer require sabas/edifact`
-
-The mapping XML files are provided in a separate package:
-
-`composer require php-edifact/edifact-mapping`
+This fork is not publicly available via composer and intended for proprietary use.
 
 EDI\Parser
 ------------------
