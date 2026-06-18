@@ -1,7 +1,5 @@
 codeCoverage/*
 /vendor
 /build
-composer.lock
-.vscode
 .phan
 .phpunit*

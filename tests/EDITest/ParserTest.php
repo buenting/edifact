@@ -106,7 +106,9 @@ final class ParserTest extends \PHPUnit\Framework\TestCase
         ];
     }
 
-    #[DataProvider('multipleEscapedSegmentsProvider')]
+    /**
+     * @dataProvider multipleEscapedSegmentsProvider
+     */
     public function testMultipleEscapedSegments($string, $expected)
     {
         $p = new Parser();

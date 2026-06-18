@@ -83,7 +83,7 @@ class Parser
     /**
      * @var string UNB Syntax identifier
      */
-    private string $syntaxID = '';
+    private $syntaxID = '';
 
     /**
      * @var string|null Message format from UNH
@@ -100,7 +100,10 @@ class Parser
      */
     private $messageNumber;
 
-    private ?string $sourceEncoding = null;
+    /**
+     * @var string|null Source encoding
+     */
+    private $sourceEncoding = null;
 
     /**
      * @var array<string,string>
@@ -134,9 +137,9 @@ class Parser
     private $unbChecked = false;
 
     /**
-     * Optionally disable workarounds.
+     * @var bool Optionally disable workarounds.
      */
-    private bool $strict = false;
+    private $strict = false;
 
     /**
      * Parse EDI array.
@@ -512,7 +515,7 @@ class Parser
             '/^(UNA[^%1$s]+%1$s\W?\W?)?UNB%2$s(?<syntax_identifier>\w{4})%3$s/m',
             $this->symbEnd,
             $this->sepData,
-            $this->sepComp,
+            $this->sepComp
         );
         if (
             ! $this->unbChecked

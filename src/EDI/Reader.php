@@ -562,9 +562,10 @@ class Reader
     }
 
     /**
+     * @var mixed $segment_name
      * @return false|mixed
      */
-    private function getOffsetSegmentFromResult(array $matchingSegments, int $offset, bool $required, mixed $segment_name): mixed
+    private function getOffsetSegmentFromResult(array $matchingSegments, int $offset, bool $required, $segment_name)
     {
         if (isset($matchingSegments[$offset])) {
             return $matchingSegments[$offset];
@@ -578,9 +579,10 @@ class Reader
     }
 
     /**
+     * @var mixed $segment_name
      * @return false|mixed
      */
-    private function getSegmentFromResult(array $matchingSegments, bool $required, mixed $segment_name): mixed
+    private function getSegmentFromResult(array $matchingSegments, bool $required, $segment_name)
     {
         // found more than one segment - error
         if (count($matchingSegments) > 1) {
