@@ -5,7 +5,7 @@ Tools to process EDI messages in UN/EDIFACT format
 
 Supported syntax is version 3.
 
-This fork is not publicly available via composer and intended for proprietary use.
+This fork is intended for proprietary use.
 
 EDI\Parser
 ------------------
